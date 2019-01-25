@@ -15,3 +15,5 @@ cd tdf =>  ng serve --open
 Open another terminal
 Open folder server using terminal
 cd server => node server
+
+Run files in the js folder using node
