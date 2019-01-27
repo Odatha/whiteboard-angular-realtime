@@ -2,7 +2,7 @@
 
 (function() {
 
-  var socket = io('http://192.168.8.100:3500/');
+  var socket = io('http//:localhost:3500/');
   var canvas = document.getElementsByClassName('whiteboard')[0];
   var colors = document.getElementsByClassName('color');
   var context = canvas.getContext('2d');
@@ -97,7 +97,7 @@
     drawLine(data.x0 * w, data.y0 * h, data.x1 * w, data.y1 * h, data.color);
   }
 
-  // make the canvas fill its parent
+  // make the canva5s fill its parent
   function onResize() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;

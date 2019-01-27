@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <canvas class="whiteboard" ></canvas>
+  <canvas id="content" #content class="whiteboard" ></canvas>
 
   <div class="colors">
     <div class="color black"></div>
@@ -15,11 +15,19 @@
     <div class="color green"></div>
     <div class="color blue"></div>
     <div class="color yellow"></div>
+    <div class="color"><button (click)="downloadPDF()">Capture Drawing</button></div>
+    <p> </p><input type="file" (change)="preview($event)" accept="image/*">
   </div>
+
+<!-- <div id="content" #content> -->
+  <h1></h1>
+  <!-- <p>click button to download the content</p> -->
+<!-- </div> -->
+
 
   <script src="../../assets/js/socket.io.js"></script>
   <script src="../../assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-
+  
 </body>
 </html>

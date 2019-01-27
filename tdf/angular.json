@@ -29,6 +29,7 @@
               "src/script.js",
               "src/assets/js/socket.io.js",
               "src/assets/js/main.js"
+              
             
             ]
           },
